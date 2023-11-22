@@ -1,0 +1,19 @@
+.link {
+  color: #fe724c;
+}
+
+.note {
+  color: #111719;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.09px;
+}
+
+.num-note {
+  color: #9796a1;
+  font: 14px;
+}
+
+.mobile-last {
+  display: none;
+}
