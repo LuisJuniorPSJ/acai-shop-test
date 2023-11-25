@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Açai Natural</title>
+    <title>Page Not Found</title>
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      // Redirecionar todas as solicitações para o arquivo index.html
+      (function () {
+        const path = window.location.href.split("/").slice(3).join("/");
+        window.history.replaceState({}, document.title, `/${path}#/`);
+      })();
+    </script>
   </body>
 </html>
