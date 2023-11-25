@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
 import { OrderProvider } from "./components/OrderProvider";
@@ -14,10 +14,11 @@ const App: React.FC = () => {
       <Router>
         <OrderProvider>
           <Routes>
-            <Route path="/acai-shop-test" element={<SizeSelection />} />
-            <Route path="/fruits" element={<FruitSelection />} />
-            <Route path="/toppings" element={<ToppingsSelection />} />
-            <Route path="/summary" element={<Summary />} />
+            <Route path="/acai-shop-test" element={<SizeSelection />}>
+              <Route path="fruits" element={<FruitSelection />} />
+              <Route path="toppings" element={<ToppingsSelection />} />
+              <Route path="summary" element={<Summary />} />
+            </Route>
           </Routes>
         </OrderProvider>
       </Router>
