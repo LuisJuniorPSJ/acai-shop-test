@@ -15,9 +15,9 @@ const App: React.FC = () => {
         <OrderProvider>
           <Routes>
             <Route path="/acai-shop-test" element={<SizeSelection />}>
-              <Route path="fruits" element={<FruitSelection />} />
-              <Route path="toppings" element={<ToppingsSelection />} />
-              <Route path="summary" element={<Summary />} />
+              <Route path="/fruits" element={<FruitSelection />} />
+              <Route path="/toppings" element={<ToppingsSelection />} />
+              <Route path="/summary" element={<Summary />} />
             </Route>
           </Routes>
         </OrderProvider>
