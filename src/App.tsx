@@ -11,10 +11,10 @@ import Summary from "./components/Summary";
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <Router>
+      <Router basename="/acai-shop-test">
         <OrderProvider>
           <Routes>
-            <Route path="/acai-shop-test" element={<SizeSelection />} />
+            <Route path="/" element={<SizeSelection />} />
             <Route path="/fruits" element={<FruitSelection />} />
             <Route path="/toppings" element={<ToppingsSelection />} />
             <Route path="/summary" element={<Summary />} />
