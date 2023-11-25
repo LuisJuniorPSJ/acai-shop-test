@@ -1,7 +1,7 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
-import { store } from "./store"; // Importe a store configurada, não o rootReducer
+import { store } from "./store";
 import { OrderProvider } from "./components/OrderProvider";
 import SizeSelection from "./components/SizeSelection";
 import FruitSelection from "./components/FruitSelection";
